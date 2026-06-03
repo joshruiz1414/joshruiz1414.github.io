@@ -18,7 +18,7 @@ body {
     padding: 90px 20px;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("assets/images/background_photo");
+        url("assets/images/background_photo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,18 +92,21 @@ section h2 {
 }
 
 .links-container {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
 .links-container .btn {
-    margin: 8px 8px 0 8px;
+    margin-top: 0;
 }
 
 /* projects */
 #projects {
     background-image: linear-gradient(rgba(244, 247, 251, 0.94), rgba(244, 247, 251, 0.94)),
-        url("assets/images/H5_game_background");
+        url("assets/images/H5_game_background.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
