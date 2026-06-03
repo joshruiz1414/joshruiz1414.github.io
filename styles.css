@@ -106,12 +106,11 @@ section h2 {
 
 /* projects */
 #projects {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("assets/images/background_photo.png");
+    background-image: linear-gradient(rgba(244, 247, 251, 0.94), rgba(244, 247, 251, 0.94)),
+        url("assets/images/H5_game_background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 .project-grid {
@@ -144,12 +143,10 @@ section h2 {
 .project-img {
     width: 100%;
     height: 180px;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
     border-radius: 8px;
     display: block;
     margin-bottom: 12px;
-    background: #f2f2f2;
 }
 
 .project-card h4 {
