@@ -114,14 +114,26 @@ section h2 {
 }
 
 /* projects */
-#projects {
+/* #projects {
     background-image: linear-gradient(rgba(244, 247, 251, 0.70), rgba(244, 247, 251, 0.70)),
         url("assets/images/h5_games_background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+} */
+
+
+#projects {
+    min-height: 400px;
+    background-image: linear-gradient(rgba(244, 247, 251, 0.45), rgba(244, 247, 251, 0.45)),
+        url("assets/images/h5_games_background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
+
 
 .project-grid {
     display: grid;
