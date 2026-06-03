@@ -30,14 +30,14 @@ body {
     z-index: 1;
 }
 
-.profile-img {
-    width: 150px;
-    height: 150px;
+.project-img {
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid white;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-    margin-bottom: 14px;
+    object-position: center;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
 }
 
 .header h1 {
@@ -106,11 +106,12 @@ section h2 {
 
 /* projects */
 #projects {
-    background-image: linear-gradient(rgba(244, 247, 251, 0.94), rgba(244, 247, 251, 0.94)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
         url("assets/images/H5_game_background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .project-grid {
