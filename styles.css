@@ -31,7 +31,7 @@ body {
 }
 
 .header-text {
-    max-width: 600px;
+    max-width: 520px;
     margin: 0 auto;
 }
 
@@ -114,24 +114,18 @@ section h2 {
 }
 
 /* projects */
-/* #projects {
-    background-image: linear-gradient(rgba(244, 247, 251, 0.70), rgba(244, 247, 251, 0.70)),
+ #projects {
+    color: rgb(3, 3, 3);
+    background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(20, 23, 23, 0.7)),
         url("assets/images/h5_games_background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-} */
+} 
 
-
-#projects {
-    min-height: 400px;
-    background-image: linear-gradient(rgba(244, 247, 251, 0.45), rgba(244, 247, 251, 0.45)),
-        url("assets/images/h5_games_background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
+.project-header{
+    color: rgb(242, 239, 239);
 }
 
 
