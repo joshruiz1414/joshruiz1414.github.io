@@ -14,7 +14,7 @@ body {
 /* header */
 .header {
     position: relative;
-    text-align: left;
+    text-align: center;
     padding: 90px 20px;
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
@@ -28,6 +28,13 @@ body {
 .header > * {
     position: relative;
     z-index: 1;
+}
+
+.header p {
+    text-align: left;
+    max-width: 780px;
+    margin: 0 auto 8px auto;
+    color: #f0f0f0;
 }
 
 .profile-img {
