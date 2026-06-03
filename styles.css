@@ -30,11 +30,13 @@ body {
     z-index: 1;
 }
 
+.header-text {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
 .header p {
     text-align: left;
-    max-width: 780px;
-    margin: 0 auto 8px auto;
-    color: #f0f0f0;
 }
 
 .profile-img {
@@ -114,7 +116,7 @@ section h2 {
 /* projects */
 #projects {
     background-image: linear-gradient(rgba(244, 247, 251, 0.94), rgba(244, 247, 251, 0.94)),
-        url("assets/images/H5_game_background.png");
+        url("assets/images/h5_games_background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
