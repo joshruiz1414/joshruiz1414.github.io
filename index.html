@@ -8,127 +8,134 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <img src="assets/images/Joshua Photo.jpeg" alt="Your Name" class="profile-img">
-        <h1>Joshua Ruiz</h1>
-        <div class="header-text">
-            <p class="subtitle">First year MEng Computer Engineering student - University of Waterloo </p>
-            <br>
-            <p class="subtitle">B.Sc Computer Engineering - University of Victoria 
-            <br>
-            <strong> Specializations:</strong> Computer Intelligence, Networks, Security and Privacy</p>
-        </div>
-        <a href="assets/resumes/Joshua_Nowell_Resume_Latex.pdf" target="_blank" class="btn">Download Resume</a>
-    </header>
+    <button class="sidebar-toggle" id="sidebarToggle">☰</button>
 
-    <!-- About -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am currently a first year Computer Engineering Masters student at the University of Waterloo, 
-            I graduate from the University of Victoria with a Bachelors in Computer Engineering.
-            I have completed over 4 Co-op work terms at diverse places, such as medical imaging and IT specialist companies and even working for the federal government of Canada.
-            I thrive on creative challenges and projects, always looking to implement my own personal touch into every piece of code I create.
-            Some projects I have worked on are, multiple H5 games which can be seen below, and I am currently working on an iOS application to help users set and track their goals.
-            <br>
-            <br>
-            Additional projects that I have yet to include on my website would be where I used machine learning models like YoloV8 to identify specific objects such as humans, penguins and even dendrite images used in healthcare. 
-            Some hardware projects where I built an alarm clock using a micro controller and a face tracking security camera with an email notification system that leverages a pi 4.
-            <br>
-            <br>
-            I am hoping to work as a software engineer, which will give me the opportunity to expand my software development skills and hopefully contribute
-            positively to the world of technology. 
-        </p>
-        <h2>Links</h2>
-        <div class="links-container">
-            <a href="https://github.com/joshruiz1414" target="_blank" class="btn">Github</a>
-            <a href="https://www.linkedin.com/in/joshua-ruiz-software/" target="_blank" class="btn">LinkedIn</a>
-        </div>
-    </section>
+    <nav class="sidebar collapsed" id="sidebar">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <main class="page-content">
+        <!-- header -->
+        <header class="header" id="top">
+            <img src="assets/images/Joshua Photo.jpeg" alt="Joshua Ruiz" class="profile-img">
+            <h1>Joshua Ruiz</h1>
+            <div class="header-text">
+                <p class="subtitle">First year MEng Computer Engineering student - University of Waterloo</p>
+                <p class="subtitle">B.Sc Computer Engineering - University of Victoria<br>
+                    <strong>Specializations:</strong> Computer Intelligence, Networks, Security and Privacy
+                </p>
+            </div>
+            <a href="assets/resumes/Joshua_Nowell_Resume_Latex.pdf" target="_blank" class="btn">Download Resume</a>
+        </header>
 
-
-    <!-- Projects -->
-    <section id="projects">
-     <div class="project-header">
-         <h2>Projects</h2>
-         <h3 style="text-align: center;">H5 Games</h3>
-
-     </div>   
-
-    <div class="project-grid">
-        <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/Space%20Shooter%20Game" target="_blank" class="project-link">
-        <div class="project-card">
-            <img src="assets/images/spaceShooter_game.png" alt="Space Shooter screenshot" class="project-img">
-            <h4>Space Shooter</h4>
+        <!-- About -->
+        <section id="about">
+            <h2>About Me</h2>
             <p>
-            Is an arcade-style shooter where the player pilots a spacecraft and eliminates incoming enemies while avoiding collisions. 
-            The game features projectile mechanics, enemy spawning, and a scoring system that increases as the player survives longer 
-            and destroys enemies. The game was developed using JavaScript and HTML5 Canvas, implementing a real time game loop, 
-            object-oriented entity management, and collision detection between bullets, enemies, and the player. Enemy behavior and 
-            projectile movement were designed to create increasing difficulty over time. This project highlights my experience with 
-            real time rendering, game physics, and modular JavaScript architecture.
+                I am currently a first year Computer Engineering Masters student at the University of Waterloo, 
+                I graduate from the University of Victoria with a Bachelors in Computer Engineering.
+                I have completed over 4 Co-op work terms at diverse places, such as medical imaging and IT specialist companies and even working for the federal government of Canada.
+                I thrive on creative challenges and projects, always looking to implement my own personal touch into every piece of code I create.
+                Some projects I have worked on are, multiple H5 games which can be seen below, and I am currently working on an iOS application to help users set and track their goals.
+                <br><br>
+                Additional projects that I have yet to include on my website would be where I used machine learning models like YoloV8 to identify specific objects such as humans, penguins and even dendrite images used in healthcare. 
+                Some hardware projects where I built an alarm clock using a micro controller and a face tracking security camera with an email notification system that leverages a pi 4.
+                <br><br>
+                I am hoping to work as a software engineer, which will give me the opportunity to expand my software development skills and hopefully contribute positively to the world of technology. 
             </p>
-        </div>
-        </a>
 
-        <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/MiniGames%20Game" target="_blank" class="project-link">
-        <div class="project-card">
-            <img src="assets/images/miniGame_snake_game.png" alt="Mini Games screenshot" class="project-img">
-            <h4>Mini Games</h4>
-            <p>
-            This project is a collection of small arcade style games built to experiment with different gameplay 
-            mechanics and programming patterns. Each mini game focuses on a specific concept such as player movement, 
-            obstacle avoidance, or timing-based interactions. The collection was built using JavaScript, HTML, and CSS, 
-            emphasizing reusable components and simple game loops. These games served as a sandbox for testing gameplay ideas 
-            and improving my understanding of browser-based game development. This project demonstrates my ability to rapidly 
-            prototype ideas and implement systems using JavaScript.
-            </p>
-        </div>
-        </a>
+            <h2>Links</h2>
+            <div class="links-container">
+                <a href="https://github.com/joshruiz1414" target="_blank" class="btn">Github</a>
+                <a href="https://www.linkedin.com/in/joshua-ruiz-software/" target="_blank" class="btn">LinkedIn</a>
+            </div>
+        </section>
 
-        <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/Road%20Bomber%20Game" target="_blank" class="project-link">
-        <div class="project-card">
-            <img src="assets/images/roadBomber_game.png" alt="Road Bomber screenshot" class="project-img">
-            <h4>Road Bomber</h4>
-            <p>
-            Road Bomber is a fast paced endless runner where the player must avoid enemies and environmental 
-            hazards while traveling as far as possible. The game features dynamic obstacle spawning, 
-            scrolling terrain, and collectible coins that increase the player’s score. The project was built 
-            using HTML5 Canvas and JavaScript, with an object-oriented architecture separating entities such as the player, 
-            enemies, platforms, and collectibles. Collision detection, procedural obstacle generation, and responsive canvas 
-            resizing were implemented to create smooth gameplay across different screen sizes. This project demonstrates my 
-            experience with game loops, collision systems, and JavaScript design.
-            </p>
-        </div>
-        </a>
-    </div>
-`   <div class="project-header">
+        <!-- projects -->
+        <section id="projects">
+            <div class="project-header">
+                <h2>Projects</h2>
+                <h3 style="text-align: center;">H5 Games</h3>
+            </div>
 
-        <h3 style="text-align: center;">iOS Apps</h3>
-    </div>
-    <div class="project-grid">
-        <a href="https://github.com/joshruiz1414/Goals-App" target="_blank" class="project-link">
-        <div class="project-card">
-            <h4>Goals App (WIP)</h4>
-            <p>A goals app where users can keep track of current and past goals. Allowing you to 
-                share and update goals that have been achieved and see what goals your friends are currently accomplishing</p>
-        </div>
-        </a>
-    </div>
-    </section>
+            <div class="project-grid">
+                <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/Space%20Shooter%20Game" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <img src="assets/images/spaceShooter_game.png" alt="Space Shooter screenshot" class="project-img">
+                        <h4>Space Shooter</h4>
+                        <p>
+                            Is an arcade-style shooter where the player pilots a spacecraft and eliminates incoming enemies while avoiding collisions. 
+                            The game features projectile mechanics, enemy spawning, and a scoring system that increases as the player survives longer 
+                            and destroys enemies. The game was developed using JavaScript and HTML5 Canvas, implementing a real time game loop, 
+                            object-oriented entity management, and collision detection between bullets, enemies, and the player. Enemy behavior and 
+                            projectile movement were designed to create increasing difficulty over time. This project highlights my experience with 
+                            real time rendering, game physics, and modular JavaScript architecture.
+                        </p>
+                    </div>
+                </a>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:joshrn2002@gmail.com">joshrn2002@gmail.com</a></p>
-        <p>Phone: 778-954-9715</p>
-    </section>
+                <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/MiniGames%20Game" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <img src="assets/images/miniGame_snake_game.png" alt="Mini Games screenshot" class="project-img">
+                        <h4>Mini Games</h4>
+                        <p>
+                            This project is a collection of small arcade style games built to experiment with different gameplay 
+                            mechanics and programming patterns. Each mini game focuses on a specific concept such as player movement, 
+                            obstacle avoidance, or timing-based interactions. The collection was built using JavaScript, HTML, and CSS, 
+                            emphasizing reusable components and simple game loops. These games served as a sandbox for testing gameplay ideas 
+                            and improving my understanding of browser-based game development. This project demonstrates my ability to rapidly 
+                            prototype ideas and implement systems using JavaScript.
+                        </p>
+                    </div>
+                </a>
 
-    <footer>
-        <p>&copy; 2026 Joshua Ruiz Nowell</p>
-    </footer>
+                <a href="https://github.com/joshruiz1414/H5-Game-Development/tree/main/H5-games/Road%20Bomber%20Game" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <img src="assets/images/roadBomber_game.png" alt="Road Bomber screenshot" class="project-img">
+                        <h4>Road Bomber</h4>
+                        <p>
+                            Road Bomber is a fast paced endless runner where the player must avoid enemies and environmental 
+                            hazards while traveling as far as possible. The game features dynamic obstacle spawning, 
+                            scrolling terrain, and collectible coins that increase the player’s score. The project was built 
+                            using HTML5 Canvas and JavaScript, with an object-oriented architecture separating entities such as the player, 
+                            enemies, platforms, and collectibles. Collision detection, procedural obstacle generation, and responsive canvas 
+                            resizing were implemented to create smooth gameplay across different screen sizes. This project demonstrates my 
+                            experience with game loops, collision systems, and JavaScript design.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project-header">
+                <h3 style="text-align: center;">iOS Apps</h3>
+            </div>
+
+            <div class="project-grid">
+                <a href="https://github.com/joshruiz1414/Goals-App" target="_blank" class="project-link">
+                    <div class="project-card">
+                        <h4>Goals App (WIP)</h4>
+                        <p>
+                            A goals app where users can keep track of current and past goals. Allowing you to 
+                            share and update goals that have been achieved and see what goals your friends are currently accomplishing
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:joshrn2002@gmail.com">joshrn2002@gmail.com</a></p>
+            <p>Phone: 778-954-9715</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Joshua Ruiz Nowell</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>

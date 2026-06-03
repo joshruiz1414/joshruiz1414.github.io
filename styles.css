@@ -5,10 +5,83 @@
     font-family: Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.6;
     color: #333;
     background: #f4f7fb;
+}
+
+.page-content {
+    margin-left: 0;
+}
+
+/* toggle */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    background: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar-toggle:hover {
+    background: #005f99;
+}
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 70px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.92);
+    padding: 16px 14px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(8px);
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #005f99;
+}
+
+.sidebar.collapsed {
+    transform: translateX(-140%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+section {
+    padding: 50px 20px;
+    scroll-margin-top: 30px;
+}
+
+section h2 {
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 2rem;
 }
 
 /* header */
@@ -77,18 +150,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* SECTIONS */
-section {
-    padding: 50px 20px;
-}
-
-section h2 {
-    margin-bottom: 18px;
-    text-align: center;
-    font-size: 2rem;
-}
-
-/* ABOUT */
+/* about */
 #about {
     background: #ffffff;
     text-align: left;
@@ -114,7 +176,7 @@ section h2 {
 }
 
 /* projects */
- #projects {
+#projects {
     color: rgb(3, 3, 3);
     background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(20, 23, 23, 0.7)),
         url("assets/images/h5_games_background.png");
@@ -122,12 +184,11 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-} 
-
-.project-header{
-    color: rgb(242, 239, 239);
 }
 
+.project-header {
+    color: rgb(242, 239, 239);
+}
 
 .project-grid {
     display: grid;
@@ -188,4 +249,24 @@ footer {
     padding: 14px 0;
     background: #e9edf3;
     margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .sidebar-toggle {
+        top: 14px;
+        left: 14px;
+    }
+
+    .sidebar {
+        top: 60px;
+        left: 14px;
+    }
+
+    .page-content {
+        margin-left: 0;
+    }
+
+    .sidebar.collapsed {
+        transform: translateX(-150%);
+    }
 }
