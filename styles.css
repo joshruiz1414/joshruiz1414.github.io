@@ -32,7 +32,7 @@ body {
 
 .project-img {
     width: 100%;
-    height: 220px;
+    height: 180px;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
@@ -107,7 +107,7 @@ section h2 {
 /* projects */
 #projects {
     background-image: linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
-        url("assets/images/H5_game_background.png");
+        url("assets/images/background_photo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
