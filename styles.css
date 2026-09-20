@@ -234,6 +234,30 @@ section h2 {
     color: #444;
 }
 
+/* web app grid */
+.web-app-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.web-app-grid .project-link {
+    width: 60%;
+    max-width: 650px;
+}
+
+.web-app-grid .project-card {
+    text-align: center;
+}
+
+.web-app-grid .project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 12px;
+}
+
 /* contact */
 #contact {
     background: #ffffff;
